@@ -1,3 +1,30 @@
 <!DOCTYPE html>
+<title>Gradient</title>
 
-<p>&#x1D44E; = 2</p>
+<style>
+body {
+  background-image: url("Untitled.bmp");
+  margin: 0;
+  overflow: hidden
+}
+</style>
+
+<script>
+window.onload = function() {
+  // Canvas is resized to satisfy maximum 16:9 ratio.
+  const myCanvas = document.body.firstChild;
+  if (9*window.innerWidth > 16*window.innerHeight) {
+    // If window is too wide, then window.innerHeight determines first child's width
+    myCanvas.height = window.innerHeight - (window.innerHeight % 9);
+    myCanvas.width = (myCanvas.height/9)*16;
+  } else {
+    // Else, the first child's width is determined by window.innerWidth
+    myCanvas.width = window.innerWidth - (window.innerWidth % 16);
+    myCanvas.height = (myCanvas.width/16)*9;
+  }
+  myCanvas.style.margin = "auto";
+};
+window.onresize = window.onload;
+</script>
+
+<canvas style="background-color: #000"></canvas>
