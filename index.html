@@ -9,22 +9,10 @@ body {
 }
 </style>
 
-<script>
-window.onload = function() {
-  // Canvas is resized to satisfy maximum 16:9 ratio.
-  const myCanvas = document.body.firstChild;
-  if (9*window.innerWidth > 16*window.innerHeight) {
-    // If window is too wide, then window.innerHeight determines first child's width
-    myCanvas.height = window.innerHeight - (window.innerHeight % 9);
-    myCanvas.width = (myCanvas.height/9)*16;
-  } else {
-    // Else, the first child's width is determined by window.innerWidth
-    myCanvas.width = window.innerWidth - (window.innerWidth % 16);
-    myCanvas.height = (myCanvas.width/16)*9;
-  }
-  myCanvas.style.margin = "auto";
-};
-window.onresize = window.onload;
-</script>
-
 <canvas style="background-color: #000"></canvas>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna sapien, congue a placerat in, pellentesque eget lorem. Praesent ac erat ex. Sed mollis, enim ut tincidunt vulputate, nisl neque vehicula metus, at aliquam turpis est non nunc. Quisque eleifend justo vitae mi malesuada rutrum. Etiam lobortis, lacus ultricies vestibulum bibendum, odio nisl molestie ipsum, eget tincidunt dolor ex eu magna. Aliquam porttitor tincidunt lorem vel elementum. Integer aliquet, nibh ac tristique maximus, odio sem ullamcorper quam, in egestas urna sapien ut tortor. Pellentesque odio leo, laoreet non faucibus eu, fringilla ut purus. Suspendisse potenti.</p>
+<p>Ut vestibulum orci quis mi ultrices, eu consequat sem sagittis. Nunc ornare eleifend sollicitudin. Curabitur massa urna, auctor at dignissim sed, auctor et libero. Morbi a scelerisque enim, non tincidunt eros. Nullam at lacus in arcu venenatis lobortis. Nam nibh velit, molestie at tellus nec, rhoncus facilisis ex. Fusce lacinia aliquet elit eu aliquam. Aenean at posuere massa, volutpat fermentum dui. Nulla faucibus laoreet massa. Suspendisse non aliquam ligula. Donec vitae facilisis nibh. Mauris a accumsan odio. Nunc dictum congue lorem.</p>
+<p>Praesent efficitur, massa in volutpat eleifend, odio turpis tincidunt nulla, id vestibulum purus eros in eros. Cras sed malesuada ex, et pharetra nibh. Etiam sit amet elementum leo. Nulla ac finibus augue, sit amet lobortis neque. Nulla ac auctor elit. Nulla nec velit eget nisl pharetra commodo id eu arcu. Nam sit amet placerat risus, non euismod risus. Maecenas porta tristique odio, id pharetra leo consectetur sit amet. Duis felis sem, molestie a magna in, finibus convallis nulla.</p>
+<p>Donec pulvinar id ex at scelerisque. Proin molestie lectus et leo mattis, id volutpat justo ullamcorper. Donec finibus condimentum tempus. Pellentesque tortor diam, porttitor vitae tincidunt pharetra, malesuada quis felis. Maecenas mollis consectetur erat, quis euismod velit. Quisque tincidunt nisi nec ante ullamcorper mattis sit amet ac massa. Pellentesque ut hendrerit eros.</p>
+<p>Nunc a metus vitae orci venenatis ullamcorper a vitae nisi. Nam ante odio, auctor nec accumsan viverra, dictum nec nunc. Mauris sit amet aliquet justo, at gravida orci. Duis a elit vel nibh consectetur aliquet in nec nibh. Quisque commodo diam a leo sagittis, at sollicitudin sapien bibendum. Integer vehicula ligula et lectus finibus semper. Nunc vitae ligula orci. Nunc non turpis eget odio consequat molestie eu sed elit. Proin ultricies vulputate ipsum blandit feugiat. Nulla aliquet placerat sodales. Pellentesque consequat vitae magna quis facilisis. Mauris dictum ornare condimentum. Sed imperdiet sapien velit, nec tincidunt ex euismod sit amet. Nam in fringilla nibh. Morbi bibendum ornare sollicitudin.</p>
