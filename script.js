@@ -1,21 +1,7 @@
-const myCanvas = document.createElement("canvas");
-const myDiv = document.createElement("div");
-
 window.onload = function() {
-  document.head.innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+  document.body.append(document.createElement("h1"));
+  document.body.lastChild.innerHTML = "Heading goes here";
 
-  document.overflowY = "scroll";
-
-  myCanvas.width = document.body.clientWidth;
-  myCanvas.height = Math.floor(window.innerHeight / 2);
-  myCanvas.style.backgroundColor = "rgb(224, 224, 224)";
-
-  myDiv.style.marginLeft = Math.floor(window.innerWidth / 4) + "px";
-  myDiv.style.marginRight = myDiv.style.marginLeft;
-  myDiv.style.fontSize = "36px";
-  myDiv.innerHTML = "<h1>Gradient</h1><p>Bacon ipsum dolor amet shoulder rump pig swine sirloin, filet mignon bresaola meatball shank buffalo leberkas andouille prosciutto tenderloin biltong. Cow fatback bresaola, shankle biltong filet mignon chuck prosciutto kielbasa pork loin burgdoggen hamburger porchetta cupim. Flank buffalo doner, pig chuck brisket jerky capicola tongue landjaeger. Ham hock pork chop short ribs buffalo. Beef pork loin brisket chicken, swine ground round cupim. Buffalo fatback cow turkey short loin chicken beef ribs swine. Strip steak beef ribs tri-tip ground round, pork chop short ribs fatback buffalo rump spare ribs tenderloin. Pork pastrami brisket, strip steak frankfurter salami meatloaf ground round kevin jowl boudin bacon. Short loin meatloaf tail ground round sausage drumstick. Sirloin pork chop jerky strip steak landjaeger porchetta leberkas tail beef ribs hamburger pancetta cow meatloaf pork ham hock.</p>";
-
-  document.body.style.margin = "0";
-  document.body.append(myCanvas);
-  document.body.append(myDiv);
+  document.body.append(document.createElement("p"));
+  document.body.lastChild.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec orci lorem. Maecenas maximus egestas ex quis eleifend. Nam ultrices dui orci, eu cursus purus tristique quis. Pellentesque quis nulla sapien. Maecenas at imperdiet erat. Ut fermentum pretium justo, vitae eleifend purus pretium ut. Etiam vulputate vitae lectus sed porta. Vestibulum viverra luctus risus tempus scelerisque. Aenean bibendum hendrerit fringilla. Sed molestie, sapien vitae sagittis gravida, lectus nisi suscipit nisl, ac ultrices justo est nec nisl. Nunc et nulla magna. Curabitur vel tempor tortor. Pellentesque mollis arcu neque, in elementum purus placerat ac. Sed nec vestibulum sem.";
 }
