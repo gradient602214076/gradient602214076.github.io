@@ -1,7 +1,23 @@
 window.onload = function() {
   document.body.append(document.createElement("h1"));
-  document.body.lastChild.innerHTML = "Heading goes here";
+  document.body.lastChild.innerHTML = "Gradient";
 
   document.body.append(document.createElement("p"));
-  document.body.lastChild.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec orci lorem. Maecenas maximus egestas ex quis eleifend. Nam ultrices dui orci, eu cursus purus tristique quis. Pellentesque quis nulla sapien. Maecenas at imperdiet erat. Ut fermentum pretium justo, vitae eleifend purus pretium ut. Etiam vulputate vitae lectus sed porta. Vestibulum viverra luctus risus tempus scelerisque. Aenean bibendum hendrerit fringilla. Sed molestie, sapien vitae sagittis gravida, lectus nisi suscipit nisl, ac ultrices justo est nec nisl. Nunc et nulla magna. Curabitur vel tempor tortor. Pellentesque mollis arcu neque, in elementum purus placerat ac. Sed nec vestibulum sem.";
+  document.body.lastChild.innerHTML = "I'm an amateur educator, musician, game designer, and animator who wants to help people understand difficult theories. Check out some of my lessons, music, and other work below.";
+
+  document.body.append(document.createElement("button"));
+  document.body.lastChild.innerHTML = "Lessons";
+  document.body.lastChild.setAttribute("onclick", "alert('Lessons')");
+
+  document.body.append(document.createElement("button"));
+  document.body.lastChild.setAttribute("onclick", "alert('Music')");
+  document.body.lastChild.innerHTML = "Music";
+
+  document.body.append(document.createElement("button"));
+  document.body.lastChild.innerHTML = "Games";
+  document.body.lastChild.setAttribute("onclick", "alert('Games')");
+
+  document.body.append(document.createElement("button"));
+  document.body.lastChild.setAttribute("onclick", "alert('Animations')");
+  document.body.lastChild.innerHTML = "Animations";
 }
