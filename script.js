@@ -5,9 +5,6 @@ const myBody = document.createElement("div");
 window.onload = function() {
   myCanvas.style.backgroundColor = "rgb(224, 224, 224)";
   myHeading.innerHTML = "Gradient";
-  myBody.innerHTML = "clientWidth: " + eval(document.body.clientWidth);
-  myBody.innerHTML += "<br>myCanvas.width: " + eval(myCanvas.width);
-  myBody.innerHTML += "<br>myCanvas.height: " + eval(myCanvas.height);
 
   document.body.append(myCanvas);
   document.body.append(myHeading);
@@ -17,4 +14,8 @@ window.onload = function() {
 
 window.onresize = function() {
   myCanvas.width = document.body.clientWidth;
+  myBody.innerHTML = "Resize detected!"
+    + "<br>myCanvas.width: " + eval(myCanvas.width)
+    + "<br>myCanvas.height: " + eval(myCanvas.height)
+    + "<br>clientWidth: " + eval(document.body.clientWidth);
 }
